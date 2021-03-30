@@ -1,0 +1,135 @@
+.flex-grid {
+    display: flex;
+    overflow-y: auto;
+}
+.header-flex-grid{
+    /* Contact Button stays on far right when screen gets smaller */
+    display: flex;
+}
+.padding-top{
+    padding-top: 5%;
+}
+.col {
+    flex: 2 1;
+}
+.pad-sides-2{
+    padding: 2%;
+}
+.pad-top{
+    padding-top: 2rem;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.flex-col{
+    flex-direction: column;
+    display: flex;
+}
+.contact-button{
+    padding: .75rem;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.contact-button:hover{
+    color: rgb(234, 181, 42);
+    background-color: white;
+    cursor: pointer;
+}
+.height-min{
+    height: min-content;
+}
+.menu-item{
+    line-height: 2rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+.active{
+    color: rgb(234, 181, 42);
+}
+.menu-item:hover{
+    color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+.width-min{
+    width: fit-content;
+}
+.pad-sides-5{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.pad-sides-7{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.headline{
+    font-size: 5em;
+    font-weight: 700;
+}
+.subheader{
+    line-height: 2rem;
+    margin-left: 5%;
+    color: rgb(236, 236, 236);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.call-to-action{
+    margin-top: auto;
+    background-color: white;
+    color: black;
+    padding: 5rem;
+}
+.height-auto{
+    height: auto;
+}
+.height-80{
+    height: 80vh;
+}
+.vertically-center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.ml-5{
+    margin-left: 5%;
+}
+.call-to-action-header{
+    font-weight: 800;
+    font-size: larger;
+}
+.call-to-action-tag{
+    font-size: smaller;
+    font-weight: 400;
+    display: flex;
+}
+.call-to-action-tag:hover{
+    color: rgb(234, 181, 42);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.call-to-action-icon{
+    color: rgb(234, 181, 42);
+    width: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 716px) {
+    .flex-grid{
+        flex-direction: column;
+    }
+    .subheader{
+        margin-left: 0%;
+    }
+    .ml-5{
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .headline{
+        font-size: 3em;
+    }
+    .body{
+        background-color: rgb(17, 17, 17);
+      }
+  }
