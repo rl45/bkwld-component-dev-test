@@ -85,11 +85,11 @@
     animation-name: slideout;
     padding: 5rem;
 }
-.height-auto{
-    height: auto;
+.height-header{
+    min-height: 15vh;
 }
-.height-80{
-    min-height: 80vh;
+.height-page{
+    min-height: 85vh;
 }
 .vertically-center{
     margin-top: auto;

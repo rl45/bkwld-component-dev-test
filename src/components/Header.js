@@ -9,7 +9,7 @@ export default function Header() {
     const [aboutActive, setAboutActive] = useState(false)
 
     return (
-        <div className="header-flex-grid pad-sides-5 height-auto">
+        <div className="header-flex-grid pad-sides-5 height-header">
                 <div className="col pad-top">
                     <div className="width-min">
                         <img src={logo} alt="Logo" />

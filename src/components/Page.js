@@ -22,13 +22,13 @@ export default function Page(props) {
                 document.getElementById("container").style.backgroundImage = 'url(' + bgImg.src + ')';
             };
             bgImg.src = `backgrounds/${props.blocks[0].background}`;
-            
+
             document.title = props.type;
         }
     }, [props])
 
     return (
-        <div className="pad-2 pad-sides-7 flex-col height-80">
+        <div className="pad-2 pad-sides-7 flex-col height-page">
             <HeadlineSubheader headline={headline} subhead={subhead}></HeadlineSubheader>
             <CallToAction cta={cta}></CallToAction>
         </div>
