@@ -4,7 +4,7 @@ import '../css/style.css';
 export default function PageIndustries(props) {
 
     return (
-        <div className="flex-grid vertically-center padding-top">
+        <div className="flex-grid vertically-center padding-top padding-bottom">
             <div className="col headline">
                 {props.headline}
             </div>

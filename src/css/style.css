@@ -9,6 +9,9 @@
 .padding-top{
     padding-top: 5%;
 }
+.padding-bottom{
+    padding-bottom: 5%;
+}
 .col {
     flex: 2 1;
 }

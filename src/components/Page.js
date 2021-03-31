@@ -12,7 +12,6 @@ export default function Page(props) {
 
     useEffect(() => {
         if (props.blocks) {
-            console.log(props.blocks)
             setBlocks(props.blocks[0])
             setHeadline(props.blocks[0].headline)
             setSubhead(props.blocks[0].subhead)
