@@ -37,12 +37,11 @@ function App() {
       <div className="background text-color" id="container">
         <Header/>
         <Switch>
-          <Route exact path="/"> 
-            {data.length > 0 ? <Page type={data[0].title} blocks={data[0].blocks}/> : <Page/>}
-          </Route>
-          <Route exact path="/industries"> 
-            {data.length > 0 ? <Page type={data[0].title} blocks={data[0].blocks}/> : <Page/>}
-          </Route>
+          {["/", "/industries"].map(path => (
+              <Route key={path} exact path={path}>
+                {data.length > 0 ? <Page type={data[0].title} blocks={data[0].blocks} /> : <Page />}
+              </Route>
+          ))}
           <Route exact path="/services"> 
             {data.length > 0 ? <Page type={data[1].title} blocks={data[1].blocks}/> : <Page/>}
           </Route>
