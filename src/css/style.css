@@ -89,7 +89,7 @@
     height: auto;
 }
 .height-80{
-    height: 80vh;
+    min-height: 80vh;
 }
 .vertically-center{
     margin-top: auto;
