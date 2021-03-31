@@ -28,7 +28,8 @@ function App() {
       })
       .then(function(json) {
         setData(json.pages)
-        console.log(json.pages)
+        /*Normally, I would use a library to reduce the size of the 
+        backgroundimages before it gets into the database*/
       });
   }
   
