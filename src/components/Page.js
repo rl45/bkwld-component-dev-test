@@ -16,8 +16,13 @@ export default function Page(props) {
             setHeadline(props.blocks[0].headline)
             setSubhead(props.blocks[0].subhead)
             setCTA(props.blocks[0].cta)
-            //Update background image
-            document.getElementById("container").style.backgroundImage = `url(backgrounds/${props.blocks[0].background})`
+            //Update background image after checking image has loaded
+            let bgImg = new Image();
+            bgImg.onload = function(){
+                document.getElementById("container").style.backgroundImage = 'url(' + bgImg.src + ')';
+            };
+            bgImg.src = `backgrounds/${props.blocks[0].background}`;
+            
             document.title = props.type;
         }
     }, [props])
