@@ -19,6 +19,7 @@ export default function Page(props) {
             setCTA(props.blocks[0].cta)
             //Update background image
             document.getElementById("container").style.backgroundImage = `url(backgrounds/${props.blocks[0].background})`
+            document.title = props.type;
         }
     }, [props])
 

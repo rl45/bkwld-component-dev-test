@@ -49,7 +49,6 @@
     color: rgb(234, 181, 42);
 }
 .menu-item:hover{
-    color: rgb(236, 236, 236);
     cursor: pointer;
 }
 .width-min{

@@ -38,19 +38,19 @@ function App() {
         <Header/>
         <Switch>
           <Route exact path="/"> 
-            {data.length > 0 ? <Page type="industries" blocks={data[0].blocks}/> : <Page/>}
+            {data.length > 0 ? <Page type={data[0].title} blocks={data[0].blocks}/> : <Page/>}
           </Route>
           <Route exact path="/industries"> 
-            {data.length > 0 ? <Page type="industries" blocks={data[0].blocks}/> : <Page/>}
+            {data.length > 0 ? <Page type={data[0].title} blocks={data[0].blocks}/> : <Page/>}
           </Route>
           <Route exact path="/services"> 
-            {data.length > 0 ? <Page type="services" blocks={data[1].blocks}/> : <Page/>}
+            {data.length > 0 ? <Page type={data[1].title} blocks={data[1].blocks}/> : <Page/>}
           </Route>
           <Route exact path="/about"> 
-            {data.length > 0 ? <Page type="about-us" blocks={data[2].blocks}/> : <Page/>}
+            {data.length > 0 ? <Page type={data[2].title} blocks={data[2].blocks}/> : <Page/>}
           </Route>
           <Route>
-          {data.length > 0 ? <Page type="not-found" blocks={data[3].blocks}/> : <div>Error 404 Page</div>}
+          {data.length > 0 ? <Page type={data[3].title} blocks={data[3].blocks}/> : <div>Error 404 Page</div>}
           </Route>
         </Switch>
       </div>
