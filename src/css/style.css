@@ -95,7 +95,7 @@
     margin-top: auto;
     margin-bottom: auto;
 }
-.ml-10{
+.ml-mt{
     margin-left: 10%;
 }
 .call-to-action-header{
@@ -140,7 +140,7 @@
     .subheader{
         margin-left: 0%;
     }
-    .ml-10{
+    .ml-mt{
         margin-top: 5%;
         margin-left: 0%;
     }

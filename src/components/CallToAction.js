@@ -10,7 +10,7 @@ export default function CallToAction(props) {
                     <div className="col call-to-action-header">
                         {props.cta}
                     </div>
-                    <div className="col ml-10 call-to-action-tag">
+                    <div className="col ml-mt call-to-action-tag">
                         <div className="vertically-center">LET'S TALK.</div> <ArrowForwardIcon className="vertically-center call-to-action-icon"></ArrowForwardIcon>
                     </div>
                 </div>
