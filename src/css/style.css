@@ -68,7 +68,7 @@
 }
 .subheader{
     line-height: 2rem;
-    margin-left: 5%;
+    margin-left: 10%;
     color: rgb(236, 236, 236);
     margin-top: auto;
     margin-bottom: auto;
@@ -89,8 +89,8 @@
     margin-top: auto;
     margin-bottom: auto;
 }
-.ml-5{
-    margin-left: 5%;
+.ml-10{
+    margin-left: 10%;
 }
 .call-to-action-header{
     font-weight: 800;
@@ -121,7 +121,7 @@
     .subheader{
         margin-left: 0%;
     }
-    .ml-5{
+    .ml-10{
         margin-top: 5%;
         margin-left: 0%;
     }
